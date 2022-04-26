@@ -6,6 +6,7 @@
  * 1) Eine Variable land erstellen
  */
 //ToDo: füge ab hier Deinen Code ein
+let land= "Spanien"
 
 /**
  * 2) Die Variable ausgeben
@@ -18,8 +19,13 @@ function aufgabe2() {
 /**
  * 3) Erstelle die Variablen
  */
-//ToDo: füge ab hier Deinen Code ein
+function aufgabe3() {
+  console.debug("Aufgabe 3 =========little joker=====thx 2 phil============");
+  console.debug("hello world")
 
+}
+//ToDo: füge ab hier Deinen Code ein
+let stadt= "berlin",berg= "mount-everest",fluss= "nil"
 /**
  * 4) Gebe den Variablen Werte
  */
@@ -37,7 +43,7 @@ function aufgabe5() {
   console.debug("Aufgabe 7 ==========================");
 
   //ToDo: füge ab hier Deinen Code ein
-
+  let name= "elon musk",alter= 50,groesseInMeter= 1.88,amLeben= true
   console.debug(name);
   console.debug(alter);
   console.debug(groesseInMeter);
@@ -48,7 +54,9 @@ function aufgabe5() {
  * Hauptfunktion, in der die Aufgaben aufgerufen werden
  */
 function main() {
+
   aufgabe2();
+  aufgabe3();
   aufgabe4();
   aufgabe5();
 }
