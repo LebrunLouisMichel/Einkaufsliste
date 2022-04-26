@@ -21,7 +21,7 @@ function aufgabe2() {
  */
 function aufgabe3() {
   console.debug("Aufgabe 3 =========little joker=====thx 2 phil============");
-  console.debug("hello world")
+  console.debug("hello new world order")
 
 }
 //ToDo: füge ab hier Deinen Code ein
