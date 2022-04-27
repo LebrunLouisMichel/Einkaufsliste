@@ -79,7 +79,7 @@ function aufgabe6() {
     console.debug("Vorname: ", "Louis-Michel Adoindo" )
     console.debug("Nachname: ", "Lebrun")
     console.debug("Alter: ", 39 )
-    console.debug("Groesse: ", 178 )
+    console.debug("Groesse: ", 180 )
     console.debug("Aufgabe erledigt: ", true )
 }
 
