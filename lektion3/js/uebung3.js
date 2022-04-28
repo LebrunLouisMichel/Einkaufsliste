@@ -57,8 +57,10 @@ function aufgabe3() {
     greatestHits: "I´d do anithing for love, Paradise by the dashboard light",
     genre: "Musical/Rock",
     inspiration: "Richard Wagner",
-    gestorben: 2022,
-    lastWords: "Love You, God Bless, Be Well, and most of all Stay Safe. Meat."
+    verstorben: true,
+    todesJahr: 2022,
+    Zitat: "The angels had guitars before they had wings!",
+    letzteWorte: "Love You, God Bless, Be Well, and most of all Stay Safe. Meat."
 
   }
 
