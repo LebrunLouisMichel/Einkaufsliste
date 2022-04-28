@@ -10,6 +10,14 @@ function aufgabe1() {
 
   //ToDo: füge ab hier Deinen Code ein
 
+  let pizza = {
+
+    art: "Tono Speziale ChewyBetton",
+    belag: "Thunfisch, Salami, Sauce-Hollandaise, Jalapenos",
+    skala: 10,
+    gerneIsst: true,
+  }
+
   console.debug(pizza)
 }
 
@@ -19,16 +27,17 @@ function aufgabe1() {
 function aufgabe2() {
   console.debug("Aufgabe 2 ==========================");
 
-  let ghibli = {
-    name: "Studio Ghibli",
-    gruendung: 1985,
-    medium: "Anime"
+  let pastafiore= {
+    name: "Chewycana",
+    gruendung: 1648,
+    medium: "margheritta"
   }
 
   //ToDo: füge ab hier in den debugs Deinen Code ein
-  console.debug()
-  console.debug()
-  console.debug()
+
+  console.debug(Object.keys(pastafiore))
+  console.debug(Object.values(pastafiore))
+  console.debug(Object.entries(pastafiore))
 }
 
 /**
@@ -39,8 +48,23 @@ function aufgabe3() {
 
   //ToDo: füge ab hier Deinen Code ein
 
+  let kuenstler= {
+
+    name:"MeatLoaf",
+    alter: 74 ,
+    Beruf: "Saenger, Songwriter, Schauspieler",
+    greatestMovies: "Rocky Horror Picture Show, Fight Club",
+    greatestHits: "I´d do anithing for love, Paradise by the dashboard light",
+    genre: "Musical/Rock",
+    inspiration: "Richard Wagner",
+    gestorben: 2022,
+    lastWords: "Love You, God Bless, Be Well, and most of all Stay Safe. Meat."
+
+  }
+
   for (let key of Object.keys(kuenstler)) {
     console.debug(key + ": " + kuenstler[key])
+
   }
 }
 

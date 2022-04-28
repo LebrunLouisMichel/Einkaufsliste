@@ -48,7 +48,7 @@ Super! Jetzt werden die Bereiche "Einkaufen" und "Erledigt" als Listen angezeigt
 </p>
 </details>
 
-</details>
+
 
 ---
 
