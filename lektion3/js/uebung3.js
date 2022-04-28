@@ -67,6 +67,8 @@ function aufgabe3() {
   for (let key of Object.keys(kuenstler)) {
     console.debug(key + ": " + kuenstler[key])
 
+    console.debug(kuenstler)
+
   }
 }
 
