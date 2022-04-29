@@ -31,7 +31,7 @@ function aufgabe2() {
 
   if (bankRobbed != "success"){
 
-    console.debug("!Brakes are for losers!")
+    console.debug("WOOP WOOP")
   }
 }
 
@@ -48,7 +48,7 @@ function aufgabe3() {
   if (bankRobbed == "success") {
     console.debug("GO! GO! GO!")
   } else {
-    console.debug("step on the gas!")
+    console.debug("GET THE FCK OUT OF HERE!")
   }
 
 }
@@ -62,6 +62,20 @@ function aufgabe4() {
   let tag = 5
 
   //ToDo: füge ab hier Deinen Code ein
+
+  switch (tag) {
+    case tag= 1: "Montag"
+          break
+    case tag= 2: "Dienstag"
+          break
+    case tag= 3: "Mittwoch"
+          break
+    case tag= 4: "Donnerstag"
+          break
+    case tag= 5: "Freitag"
+    default:
+      console.debug("Heute ist Freitag")
+  }
 }
 
 /**
