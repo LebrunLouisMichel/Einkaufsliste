@@ -43,7 +43,7 @@ function aufgabe2() {
 function aufgabe3() {
   console.debug("Aufgabe 3 ==========================")
 
-  let bankRobbed = "success"
+  let bankRobbed = "unsuccessful"
 
   if (bankRobbed == "success") {
     console.debug("GO! GO! GO!")
