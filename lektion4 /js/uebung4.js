@@ -48,7 +48,7 @@ function aufgabe3() {
   if (bankRobbed == "success") {
     console.debug("GO! GO! GO!")
   } else {
-    console.debug("GET THE FCK OUT OF HERE!")
+    console.debug("GET THE F*CK OUT OF HERE!")
   }
 
 }
@@ -65,19 +65,25 @@ function aufgabe4() {
 
   switch (tag) {
     case 1:
-        console.debug("Heute ist Freitag")
+        console.debug("Heute ist Montag")
           break
     case 2:
-        console.debug("Heute ist Freitag")
+        console.debug("Heute ist Dienstag")
           break
     case 3:
-        console.debug("Heute ist Freitag")
+        console.debug("Heute ist Mittwoch")
         break
     case 4:
-        console.debug("Heute ist Freitag")
+        console.debug("Heute ist Donnerstag")
         break
     case 5:
         console.debug("Heute ist Freitag")
+        break
+    case 6:
+        console.debug("Heute ist Samstag")
+        break
+    case 7:
+        console.debug("Heute ist Sonntag")
         break
     default:
       console.debug("Heute ist Freitag")
