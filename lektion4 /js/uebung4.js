@@ -65,14 +65,20 @@ function aufgabe4() {
 
   switch (tag) {
     case tag= 1: "Montag"
+        console.debug()
           break
     case tag= 2: "Dienstag"
+        console.debug()
           break
     case tag= 3: "Mittwoch"
-          break
+        console.debug()
+        break
     case tag= 4: "Donnerstag"
+        console.debug()
           break
     case tag= 5: "Freitag"
+        console.debug()
+
     default:
       console.debug("Heute ist Freitag")
   }
