@@ -31,7 +31,7 @@ function aufgabe2() {
 
   if (bankRobbed != "success"){
 
-    console.debug("WOOP WOOP")
+    console.debug("WOOP WOOP - ARRESTED")
   }
 }
 
@@ -48,7 +48,7 @@ function aufgabe3() {
   if (bankRobbed == "success") {
     console.debug("GO! GO! GO!")
   } else {
-    console.debug("GET THE F*CK OUT OF HERE!")
+    console.debug("COPS ARE COMING GET THE F*CK OUT OF HERE!")
   }
 
 }
