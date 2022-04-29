@@ -85,8 +85,6 @@ function aufgabe4() {
     case 7:
         console.debug("Heute ist Sonntag")
         break
-    default:
-      console.debug("Heute ist Freitag")
   }
 }
 
