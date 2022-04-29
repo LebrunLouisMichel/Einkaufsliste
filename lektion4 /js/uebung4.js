@@ -64,21 +64,21 @@ function aufgabe4() {
   //ToDo: füge ab hier Deinen Code ein
 
   switch (tag) {
-    case tag= 1: "Montag"
-        console.debug()
+    case 1:
+        console.debug("Heute ist Freitag")
           break
-    case tag= 2: "Dienstag"
-        console.debug()
+    case 2:
+        console.debug("Heute ist Freitag")
           break
-    case tag= 3: "Mittwoch"
-        console.debug()
+    case 3:
+        console.debug("Heute ist Freitag")
         break
-    case tag= 4: "Donnerstag"
-        console.debug()
-          break
-    case tag= 5: "Freitag"
-        console.debug()
-
+    case 4:
+        console.debug("Heute ist Freitag")
+        break
+    case 5:
+        console.debug("Heute ist Freitag")
+        break
     default:
       console.debug("Heute ist Freitag")
   }
