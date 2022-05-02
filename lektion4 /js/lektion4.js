@@ -11,7 +11,7 @@ function artikel_Gekauft() {
     let artikelName = "Streukaese"
     let artikelGekauft = true
         if (artikelGekauft == true){
-        console.debug("[artikel] \"" +artikelName+ "\" wurde gekauft")
+        console.debug("[Artikel] \"" +artikelName+ "\" wurde gekauft")
 
 
     }
@@ -29,7 +29,7 @@ function artikel_Hinzufuegen() {
     let gruppenName = "Getreide"
     let artikelName = "Quinoa"
     if (artikelName){
-        console.debug("[gruppenName] " + artikelName + " hinzugefügt")
+        console.debug("[Getreide] \""+artikelName+"\" hinzugefügt")
     }
 
 }
@@ -85,7 +85,26 @@ function einkaufsliste_Vorhanden() {
 function zusatz_indexOf() {
     // ToDo: füge ab hier deinen Code ein
 
+    let einkaufsliste = ["Tofu","Milch","Butter","Honig"]
+    let tomaten
+    tomaten = "-1"
+
+
+    tomaten = einkaufsliste.indexOf("Tomaten")
+    if (tomaten == -1){
+        console.debug( "Tomaten sind nicht in der Liste")
+
+    }else {
+        console.debug("Tomaten sind in der Liste")
+    }
+
+
+
+
+
+
 }
+
 
 export {
     artikel_Gekauft, artikel_Hinzufuegen, gruppe_Hinzufuegen, einkaufsliste_Vorhanden, zusatz_indexOf
