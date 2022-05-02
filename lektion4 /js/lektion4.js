@@ -62,15 +62,14 @@ function einkaufsliste_Vorhanden() {
     // ToDo: füge ab hier deinen Code ein
     let milchProdukte = [ "Milch", "Joghurt","Sahne" ]
     let artikel = "Eisbergsalat"
-    switch(milchProdukte) {
-        case "Milch": alert( artikel = "ist ein Milchprodukt")
-            break
-        case "Joghurt": alert(artikel = "ist ein Milchprodukt")
-            break
-        case "Sahne": alert(artikel = "ist ein Milchprodukt")
+    switch(artikel) {
+            case "Milch":
+            case "Joghurt":
+            case "Sahne":
+                    console.debug(artikel,"ist ein Milchprodukt")
             break
         default:
-            alert("artikel ist KEIN Milchprodukt")
+            console.debug("Artikel \""+ artikel+"\" ist KEIN Milchprodukt")
             break
 
 
