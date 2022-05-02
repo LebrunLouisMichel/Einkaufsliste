@@ -8,6 +8,15 @@
 function artikel_Gekauft() {
     //ToDo: füge ab hier deinen Code ein
 
+    let artikelName = "Streukaese"
+    let artikelGekauft = true
+        if (artikelGekauft == true){
+        console.debug("[artikel] \"" +artikelName+ "\" wurde gekauft")
+
+
+    }
+
+
 }
 
 
@@ -17,6 +26,11 @@ function artikel_Gekauft() {
  */
 function artikel_Hinzufuegen() {
     //ToDo: füge ab hier deinen Code ein
+    let gruppenName = "Getreide"
+    let artikelName = "Quinoa"
+    if (artikelName){
+        console.debug("[gruppenName] " + artikelName + " hinzugefügt")
+    }
 
 }
 
@@ -27,6 +41,18 @@ function artikel_Hinzufuegen() {
 function gruppe_Hinzufuegen() {
     // ToDo: füge ab hier deinen Code ein
 
+    let gleicheGruppen = []
+    let neueGruppe = "Getraenke"
+    if (gleicheGruppen.length == 0){
+        console.debug("[App] Gruppe \"" +neueGruppe+ "\" hinzugefügt")
+
+
+    }else {
+        console.debug("[App] Gruppe \"" +neueGruppe+ "\" existiert schon")
+    }
+
+
+
 }
 
 /**
@@ -34,6 +60,23 @@ function gruppe_Hinzufuegen() {
  */
 function einkaufsliste_Vorhanden() {
     // ToDo: füge ab hier deinen Code ein
+    let milchProdukte = [ "Milch", "Joghurt","Sahne" ]
+    let artikel = "Eisbergsalat"
+    switch(milchProdukte) {
+        case "Milch": alert( artikel = "ist ein Milchprodukt")
+            break
+        case "Joghurt": alert(artikel = "ist ein Milchprodukt")
+            break
+        case "Sahne": alert(artikel = "ist ein Milchprodukt")
+            break
+        default:
+            alert("Eisbergsalat" + "artikel ist KEIN Milchprodukt")
+            break
+
+
+
+    }
+    console.debug()
 
 }
 
