@@ -70,7 +70,7 @@ function einkaufsliste_Vorhanden() {
         case "Sahne": alert(artikel = "ist ein Milchprodukt")
             break
         default:
-            alert("Eisbergsalat" + "artikel ist KEIN Milchprodukt")
+            alert("artikel ist KEIN Milchprodukt")
             break
 
 
