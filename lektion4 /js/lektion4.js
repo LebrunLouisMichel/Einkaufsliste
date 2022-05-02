@@ -8,7 +8,7 @@
 function artikel_Gekauft() {
     //ToDo: füge ab hier deinen Code ein
 
-    let artikelName = "Streukaese"
+    let artikelName = "Streukäse"
     let artikelGekauft = true
         if (artikelGekauft == true){
         console.debug("[Artikel] \"" +artikelName+ "\" wurde gekauft")
@@ -42,7 +42,7 @@ function gruppe_Hinzufuegen() {
     // ToDo: füge ab hier deinen Code ein
 
     let gleicheGruppen = []
-    let neueGruppe = "Getraenke"
+    let neueGruppe = "Getränke"
     if (gleicheGruppen.length == 0){
         console.debug("[App] Gruppe \"" +neueGruppe+ "\" hinzugefügt")
 
@@ -92,10 +92,10 @@ function zusatz_indexOf() {
 
     tomaten = einkaufsliste.indexOf("Tomaten")
     if (tomaten == -1){
-        console.debug( "Tomaten sind nicht in der Liste")
+        console.debug( "Tomaten sind nicht in der Einkaufsliste")
 
     }else {
-        console.debug("Tomaten sind in der Liste")
+        console.debug("Tomaten sind in der Einkaufsliste")
     }
 
 
