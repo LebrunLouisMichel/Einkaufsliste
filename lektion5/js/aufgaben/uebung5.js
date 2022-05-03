@@ -79,6 +79,17 @@ function aufgabe6() {
   console.debug("Aufgabe 6 ==========================");
 
   //ToDo: füge ab hier Deinen Code ein
+  let i=1
+  do{
+    console.debug(i)
+    i=i+1
+
+  }
+  while (i <= 5)
+
+
+
+
 }
 
 /**
