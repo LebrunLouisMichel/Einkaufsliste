@@ -49,9 +49,10 @@ function aufgabe4() {
 
   //ToDo: füge ab hier Deinen Code ein
   for(i=1;i<=3;i++){
-    console.debug("Erste Schleife i:" + i)
     for(j=1;j<=2;j++)
       console.debug("Zweite Schleife j:" + j)
+    console.debug("Erste Schleife i:" + i)
+
   }
 }
 
