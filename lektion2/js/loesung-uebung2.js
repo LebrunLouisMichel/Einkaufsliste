@@ -7,21 +7,21 @@
  * Dadurch, dass wir den namen des Arrays in der console.debug angegeben haben, werden alle Elemente ausgegeben.
  */
 function aufgabe1() {
-    console.debug("Aufgabe 1 ==========================");
+  console.debug("Aufgabe 1 ==========================");
 
-    let laender = ["USA", "Spanien", "Frankreich", "Deutschland", "Spanien"]
-    console.debug(laender)
+  let laender = ["USA", "Spanien", "Frankreich", "Deutschland", "Spanien"]
+  console.debug(laender)
 }
 
 /**
  * 2) Durch unser helden.length in der console.debug wird die Laenge des Arrays ausgegeben.
  */
 function aufgabe2() {
-    console.debug("Aufgabe 2 ==========================");
+  console.debug("Aufgabe 2 ==========================");
 
-    let helden = ["Spider-Man", "Batman", "Superman"]
+  let helden = ["Spider-Man", "Batman", "Superman"]
 
-    console.debug("Laenge des Arrays", helden.length)
+  console.debug("Laenge des Arrays", helden.length)
 }
 
 /**
@@ -29,23 +29,23 @@ function aufgabe2() {
  * dem Array heraus abgerufen.
  */
 function aufgabe3() {
-    console.debug("Aufgabe 3 ==========================");
+  console.debug("Aufgabe 3 ==========================");
 
-    let willkommen = ["Hallo", "Tschuess", "Mittag", "Planet", "Welt!"]
+  let willkommen = ["Hallo", "Tschuess", "Mittag", "Planet", "Welt!"]
 
-    console.debug(willkommen[0], willkommen[4])
+  console.debug(willkommen[0], willkommen[4])
 }
 
 /**
  * 4) Durch warenkorb.unshift können wir direkt das Element Brot vorne an unsere Liste anhaengen.
  */
 function aufgabe4() {
-    console.debug("Aufgabe 4 ==========================")
+  console.debug("Aufgabe 4 ==========================")
 
-    let warenkorb = ["Milch", "Eier", "Wurst"]
-    warenkorb.unshift("Brot")
+  let warenkorb = ["Milch", "Eier", "Wurst"]
+  warenkorb.unshift("Brot")
 
-    console.debug(warenkorb)
+  console.debug(warenkorb)
 }
 
 /**
@@ -53,37 +53,37 @@ function aufgabe4() {
  * wie viele Elemente wir loeschen wollen.
  */
 function aufgabe5() {
-    console.debug("Aufgabe 5 ==========================");
+  console.debug("Aufgabe 5 ==========================");
 
-    let buchstaben = ["a", "b", "x", "y", "z", "c", "d"]
-    buchstaben.splice(2,3)
+  let buchstaben = ["a", "b", "x", "y", "z", "c", "d"]
+  buchstaben.splice(2,3)
 
-    console.debug(buchstaben)
+  console.debug(buchstaben)
 }
 
 /**
  * 6) Schreibe deine do while Schleife
  */
 function aufgabe6() {
-    console.debug("Aufgabe 6 ==========================");
+  console.debug("Aufgabe 6 ==========================");
 
-    let developer = ["Joshua", "Scherer", 25, 1.83, true]
-    console.debug("Vorname: ", developer[0])
-    console.debug("Nachname: ", developer[1])
-    console.debug("Alter: ", developer[2])
-    console.debug("Groesse: ", developer[3])
-    console.debug("Aufgabe erledigt: ", developer[4])
+  let developer = ["Joshua", "Scherer", 25, 1.83, true]
+  console.debug("Vorname: ", developer[0])
+  console.debug("Nachname: ", developer[1])
+  console.debug("Alter: ", developer[2])
+  console.debug("Groesse: ", developer[3])
+  console.debug("Aufgabe erledigt: ", developer[4])
 }
 
 /**
  * Hauptfunktion, in der die Aufgaben aufgerufen werden
  */
 function main() {
-    aufgabe1()
-    aufgabe2()
-    aufgabe3()
-    aufgabe4()
-    aufgabe5()
-    aufgabe6()
+  aufgabe1()
+  aufgabe2()
+  aufgabe3()
+  aufgabe4()
+  aufgabe5()
+  aufgabe6()
 }
 main()
