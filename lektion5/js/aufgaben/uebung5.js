@@ -57,13 +57,19 @@ function aufgabe4() {
 }
 
 /**
- * 5) Schreibe deine while Schleife.
+ * 5) Schreibe deine whiA>le Schleife.
  */
 function aufgabe5() {
   console.debug("Aufgabe 5 ==========================");
 
   let i=1
   //ToDo: füge ab hier Deinen Code ein
+
+  while (i <= 5) {
+    console.debug(i)
+    i= i+1
+
+  }
 }
 
 /**
