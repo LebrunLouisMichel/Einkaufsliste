@@ -7,7 +7,7 @@
  */
 function aufgabe1() {
   console.debug("Aufgabe 1 ==========================");
-  for(let i=1; i < 5 ; i++){
+  for(let i=1; i <= 5 ; i++){
     console.debug("Durchlauf Nummer:" + i)
   }
 }
