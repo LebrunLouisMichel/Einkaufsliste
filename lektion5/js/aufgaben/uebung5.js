@@ -48,8 +48,8 @@ function aufgabe4() {
   console.debug("Aufgabe 4 ==========================")
 
   //ToDo: füge ab hier Deinen Code ein
-  for(i=1;i<=3;i++){
-    for(j=1;j<=2;j++)
+  for(let i=1;i<=3;i++){
+    for(let j=1;j<=2;j++)
       console.debug("Zweite Schleife j:" + j)
     console.debug("Erste Schleife i:" + i)
 
@@ -100,7 +100,7 @@ function aufgabe7() {
 
   let i=1
   do {
-    console.debug(i)
+    console.debug(i+1)
     i++
   }
   while(i<0)

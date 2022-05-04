@@ -1,4 +1,4 @@
-![](https://us-central1-progress-markdown.cloudfunctions.net/progress/56)
+3![](https://us-central1-progress-markdown.cloudfunctions.net/progress/56)
 <h1 align="center">JavaScript</h1>
 <h3 align="center">Lektion 5: Übungsaufgabe</h3>
 <br>
