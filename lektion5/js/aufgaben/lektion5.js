@@ -8,8 +8,8 @@
 function artikelAuflisten() {
     // ToDo: füge ab hier deinen Code ein
     let artikelListe2 = ["Milch"]
-    let artikelListe = ["Brokoli","Reis","Streukäse"]
-    for(let i= 0; i < artikelListe.length; i++){
+    let artikelListe = ["Brokoli", "Reis", "Streukäse"]
+    for (let i = 0; i < artikelListe.length; i++) {
         console.debug(artikelListe[i])
     }
 
@@ -21,12 +21,12 @@ function artikelAuflisten() {
  */
 function allesAuflisten() {
     let gruppenListe = []
-    let gemueseListe =["Brokoli","Zwiebeln" , "Salat"]
-    let getreideListe = ["Reis","Nudeln","Quinoa"]
-    let milchListe = ["Streukäse","Sahne","Joghurt"]
-    gruppenListe.push(gemueseListe, getreideListe ,milchListe)
-    for(let i = 0; i < gruppenListe.length; i++)
-        console.debug("Gruppe"+i,":",gruppenListe[i])
+    let gemueseListe = ["Brokoli", "Zwiebeln", "Salat"]
+    let getreideListe = ["Reis", "Nudeln", "Quinoa"]
+    let milchListe = ["Streukäse", "Sahne", "Joghurt"]
+    gruppenListe.push(gemueseListe, getreideListe, milchListe)
+    for (let i = 0; i < gruppenListe.length; i++)
+        console.debug("Gruppe" + i, ":", gruppenListe[i])
 
 // ToDo: füge ab hier deinen Code ein
 }
@@ -37,17 +37,14 @@ function allesAuflisten() {
  */
 function artikelEntfernen() {
     // ToDo: füge ab hier deinen Code ein
-        let gruppenListe = []
-    let gemueseListe =["Brokoli","Zwiebeln" , "Salat"]
+    let gruppenListe = []
+    let gemueseListe = ["Brokoli", "Zwiebeln", "Salat"]
     gruppenListe.push(gemueseListe)
-        console.debug("gemueseGruppe vorher:",gemueseListe)
-    for(let i = 0; i < gemueseListe.length ;i++){
-        gemueseListe.splice(0,1)
+    let abbruch = gemueseListe.length
+    for (let i = 0; i < abbruch; i++) {
+        gemueseListe.splice(0, 1)
+        console.debug(gemueseListe)
     }
-        console.debug("gemueseGruppe nachher:",gemueseListe)
-
-
-
 }
 
 /**
@@ -55,6 +52,21 @@ function artikelEntfernen() {
  */
 function sortieren() {
     // ToDo: füge ab hier deinen Code ein
+
+    let gruppenListe = []
+    let gemueseListe = ["Brokoli", "Zwiebeln", "Salat"]
+    let getreideListe = ["Reis", "Nudeln", "Quinoa"]
+    let milchListe = ["Streukäse", "Sahne", "Joghurt"]
+    gruppenListe.push(gemueseListe, getreideListe, milchListe)
+    console.debug("Gruppenliste vorher:", gruppenListe)
+    for (let i = 0; i < gruppenListe.length; i++) {
+        gruppenListe[i].sort()
+
+    }
+    gruppenListe.sort()
+    console.debug("Gruppenliste nachher", gruppenListe)
+
+
 }
 
 export {
