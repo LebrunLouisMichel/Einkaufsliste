@@ -41,7 +41,9 @@ function artikelEntfernen() {
     let gemueseListe =["Brokoli","Zwiebeln" , "Salat"]
     gruppenListe.push(gemueseListe)
         console.debug("gemueseGruppe vorher:",gemueseListe)
-    for(let i = 0; i < gruppenListe.splice(0,1);)
+    for(let i = 0; i < gemueseListe.length ;i++){
+        gemueseListe.splice(0,1)
+    }
         console.debug("gemueseGruppe nachher:",gemueseListe)
 
 
