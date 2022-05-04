@@ -25,8 +25,9 @@ function allesAuflisten() {
     let getreideListe = ["Reis","Nudeln","Quinoa"]
     let milchListe = ["Streukäse","Sahne","Joghurt"]
     gruppenListe.push(gemueseListe, getreideListe ,milchListe)
-    for(let = 0; i < gruppenListe.length; i++){
-        console.debug(gruppenListe[i])
+    for(let i = 0; i < gruppenListe.length; i++)
+        console.debug("Gruppe",gruppenListe,i)
+
 // ToDo: füge ab hier deinen Code ein
 }
 
@@ -36,6 +37,9 @@ function allesAuflisten() {
  */
 function artikelEntfernen() {
     // ToDo: füge ab hier deinen Code ein
+let gemueseListe =["Brokoli","Zwiebeln","Salat"]
+    gruppenListe.push(gemueseListe)
+
 
 }
 
