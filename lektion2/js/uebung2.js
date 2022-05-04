@@ -75,12 +75,12 @@ function aufgabe6() {
     console.debug("Aufgabe 6 ==========================");
 
     //ToDo: füge ab hier in das Array und die console.debugs Deinen Code ein
-    let developer = []
-    console.debug("Vorname: ", "Louis-Michel Adoindo" )
-    console.debug("Nachname: ", "Lebrun")
-    console.debug("Alter: ", 39 )
-    console.debug("Groesse: ", 180 )
-    console.debug("Aufgabe erledigt: ", true )
+    let developer = ["Louis-Michel Adoindo","Lebrun",39,180,true]
+    console.debug("Vorname: ",developer[0] )
+    console.debug("Nachname: ",developer[1])
+    console.debug("Alter: ",developer[2])
+    console.debug("Groesse: ",developer[3] )
+    console.debug("Aufgabe erledigt: ", developer[4] )
 }
 
 /**
