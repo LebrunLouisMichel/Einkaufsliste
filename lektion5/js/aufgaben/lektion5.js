@@ -7,8 +7,8 @@
  */
 function artikelAuflisten() {
     // ToDo: füge ab hier deinen Code ein
-    let artikelListe2 = ["Milch"]
     let artikelListe = ["Brokoli", "Reis", "Streukäse"]
+
     for (let i = 0; i < artikelListe.length; i++) {
         console.debug(artikelListe[i])
     }
@@ -25,9 +25,12 @@ function allesAuflisten() {
     let getreideListe = ["Reis", "Nudeln", "Quinoa"]
     let milchListe = ["Streukäse", "Sahne", "Joghurt"]
     gruppenListe.push(gemueseListe, getreideListe, milchListe)
-    for (let i = 0; i < gruppenListe.length; i++)
+
+    for (let i = 0; i < gruppenListe.length; i++) {
         console.debug("Gruppe" + i, ":", gruppenListe[i])
 
+    }
+    
 // ToDo: füge ab hier deinen Code ein
 }
 

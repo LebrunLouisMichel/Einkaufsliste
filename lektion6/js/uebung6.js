@@ -36,7 +36,7 @@ function aufgabe3() {
     function sagBye(name) {
         console.debug("Haddi tschüss " + name)
     }
-sagBye("Peter")
+sagBye("Flippchart Zwegat")
     //ToDo: füge ab hier Deinen Code ein
 }
 
@@ -48,9 +48,9 @@ function aufgabe4() {
 
     //ToDo: füge ab hier Deinen Code ein
     function willkommenZurueck(name){
-        console.debug("Hallo i bims wieder, der 1 " + name)
+        console.debug("Hallo i bims wieder, 1 " + name)
     }
-    willkommenZurueck("Peter")
+    willkommenZurueck("Pattn")
 }
 
 /**
