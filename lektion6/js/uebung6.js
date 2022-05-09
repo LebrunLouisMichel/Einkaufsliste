@@ -72,7 +72,7 @@ function aufgabe5() {
  * 6) Schreibe deine erste rekursive Funktion.
  */
 function aufgabe6() {
-    console.debug("Aufgabe 6 ==========================");
+    console.debug("Aufgabe 6 =========================");
 
     //ToDo: füge ab hier Deinen Code ein
     function fakultaet(a){
