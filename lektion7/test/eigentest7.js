@@ -10,9 +10,169 @@ function teste_artikelAuflisten() {
     let saft = new Artikel("saft", 1)
     let wasser = new Artikel("wasser", 2)
     let cola = new Artikel("cola", 3)
+
+
+    let mehl = new Artikel("Mehl", 4)
+    let reis = new Artikel("Reis", 5)
+    let banane = new Artikel("Banane", 6)
+    let weltmeister = new Artikel("Weltmeister", 7)
+    let weizentoast = new Artikel("Weizen Toast", 8)
+    let vollkorntoast = new Artikel("Vollkorn Toast", 9)
+    let orangensaft = new Artikel("Orangensaft", 10)
+    let milch = new Artikel("Milch", 11)
+    let gouda = new Artikel("Gouda", 12)
+    let tillsitter = new Artikel("Tillsitter", 13)
+    let kaffee = new Artikel("Kaffee", 14)
+    let margarine = new Artikel("Margarine", 15)
+    let oliveloel = new Artikel("Oliven Öl", 16)
+    let frittieroel = new Artikel("Frittier Öl 3L", 17)
+    let ol = new Artikel("Öl 1L", 18)
+    let kakao = new Artikel("Kakao", 19)
+    let paprikatk = new Artikel("Paprika TK", 20)
+    let hacktk = new Artikel("Hackfleisch 500G", 21)
+    let bratwursttk = new Artikel("Bratwurst 5er TK", 22)
+    let schweinefilet = new Artikel("Schweinefilet", 23)
+    let kotelett = new Artikel("Koteletts TK", 24)
+    let kartoffel = new Artikel("Kartoffeln in ca.kg", 25)
+    let zwiebel = new Artikel("Zwiebeln in ca.Kg", 26)
+    let tomaten = new Artikel("Tomaten TK", 27)
+    let moehren = new Artikel("Möhren TK", 28)
+    let erbsen = new Artikel("Erbsen TK", 29)
+    let spaghetti = new Artikel("Spaghetti", 30)
+    let spirelli = new Artikel("Spirelli", 31)
+    let penne = new Artikel("Penne", 32)
+    let tortelinischinken = new Artikel("Tortelini Schinken", 33)
+    let tortelinispinat = new Artikel("Tortelini Spinat", 34)
+    let passiertetomaten = new Artikel("Passierte Tomaten", 35)
+    let tomatendose = new Artikel("Tomaten Dose", 36)
+    let tomatenmark = new Artikel("Tomatenmark", 37)
+    let ketchup = new Artikel("Ketchup", 38)
+    let mayo = new Artikel("Mayo", 39)
+    let remoulade = new Artikel("Remoulade", 40)
+    let senf = new Artikel("Senf", 41)
+    let suessauer = new Artikel("Süß Sauer", 42)
+    let curryketchup = new Artikel("Curry Ketchup", 43)
+    let knoblauchsauce = new Artikel("Knoblauch Sauce", 44)
+    let bbcsauce = new Artikel("BBC Sauce", 45)
+    let kraeuterbutter = new Artikel("Kräuterbutter", 46)
+    let kochsahne = new Artikel("Kochsahne", 47)
+    let schlagsahne = new Artikel("Schlagsahne", 48)
+    let zucker = new Artikel("Zucker", 49)
+    let schokoaufstrich = new Artikel("Schokoaufstrich", 50)
+    let marmelade = new Artikel("Marmelade", 51)
+    let kaffeefilter = new Artikel("Kaffeefilter Pack", 52)
+    let honig = new Artikel("Honig", 53)
+    let fenchelhonig = new Artikel("Fenchelhonig", 54)
+    let kamillentee = new Artikel("Kamillentee", 55)
+    let fencheltee = new Artikel("Fencheltee", 56)
+    let pfefferminztee = new Artikel("Pfefferminztee", 57)
+    let vanillezucker = new Artikel("Vanillezucker", 58)
+    let amarettosirup = new Artikel("Amarettosirup", 59)
+    let colasirup = new Artikel("Colasirup", 60)
+    let orangensirup = new Artikel("Orangensirup", 61)
+    let zitrussirup = new Artikel("Zitrussirup", 62)
+    let prinzessbohnen = new Artikel("Prinzessbohnen", 63)
+    let chillibohnen = new Artikel("Chillibohnen", 64)
+    let weissebohnen = new Artikel("Weiße Bohnen", 65)
+    let mandarinen = new Artikel("Mandarinen", 66)
+    let apfelmuss = new Artikel("Apfelmuss", 67)
+    let schwarzwurzel = new Artikel("Schwarzwurzel", 68)
+    let spargel = new Artikel("Spargel", 69)
+    let gruenkohl = new Artikel("Grühnkohl", 70)
+    let fruehstuecksfleisch = new Artikel("Frühstücksfleisch", 71)
+    let birnen = new Artikel("Birnen", 72)
+    let aprikosen = new Artikel("Aprikosen", 73)
+    let thunfisch = new Artikel("Thunfisch", 74)
+    let champignons = new Artikel("Champignons", 75)
+    let gurckenganz = new Artikel("Gurken ganz", 76)
+    let pickels = new Artikel("Pickels", 77)
+    let gurckengeschnitten = new Artikel("Gurcken geschnitten", 78)
+    let salz = new Artikel("Salz", 78)
+    let meersalz = new Artikel("Meersalz", 80)
+    let pfefferweis = new Artikel("Pfeffer Weiß", 81)
+    let pfefferfschwarz = new Artikel("Pfeffer Schwarz", 21)
+    let pfefferbunt = new Artikel("Pfeffer Bunt", 83)
+    let paparikaedelsuess = new Artikel("Paprika edelsüß", 84)
+    let paprikarosenscharf = new Artikel("Paprika rosenscharf", 85)
+    let muskatnuss = new Artikel("Muskatnuss", 86)
+    let cumin = new Artikel("Cumin", 87)
+    let thymian = new Artikel("Thymian", 88)
+    let oregano = new Artikel("Oregano", 89)
+    let basilicum = new Artikel("Basilicum", 90)
+    let saucenbinderdunkel = new Artikel("Saucenbinder Dunkel", 91)
+    let saucenbinderhell = new Artikel("Saucenbinder Hell", 92)
+    let saucenbindercreme = new Artikel("Saucenbinder Creme", 93)
+    let hoillandaise = new Artikel("Hollandaise", 94)
+    let butter = new Artikel("Butter", 95)
+    let zitronensaft = new Artikel("Zitronensaft", 96)
+    let essigessenz = new Artikel("Essigessenz", 97)
+    let tafelessig = new Artikel("Tafelessig", 98)
+    let apfelessig = new Artikel("Apfelessig", 99)
+    let vanillepudding = new Artikel("Vanillepudding", 100)
+    let schokopudding = new Artikel("Schokopudding", 101)
+
+
     let alkoholfreieGetraenke = new Gruppe("Alkoholfreie Getränke", 1)
-    alkoholfreieGetraenke.artikelListe = [saft, wasser, cola]
+    alkoholfreieGetraenke.artikelListe = [saft, wasser, cola, colasirup, orangensirup,zitrussirup,orangensaft,kaffee,kakao,kamillentee,pfefferminztee,fencheltee,amarettosirup,]
     alkoholfreieGetraenke.artikelAuflisten(false)
+
+    let obstundGemuese = new Gruppe("Obst und Gemüse", 2)
+    obstundGemuese.artikelListe = [banane,paprikatk,kartoffel,zwiebel,tomaten,moehren,erbsen]
+    obstundGemuese.artikelAuflisten(false)
+
+    let getreideprodukte = new Gruppe("Getreideprodukte")
+    getreideprodukte.artikelListe = [mehl,reis,spaghetti,spirelli,penne,tortelinispinat,tortelinischinken,]
+    getreideprodukte.artikelAuflisten(false)
+
+    let milchprodukte = new Gruppe("Milchprodukte")
+    milchprodukte.artikelListe = [milchprodukte,gouda,tillsitter,schlagsahne,kochsahne,kraeuterbutter]
+    milchprodukte.artikelAuflisten(false)
+
+    let brot = new Gruppe("Brot")
+    brot.artikelListe = [weltmeister,vollkorntoast,weizentoast]
+    brot.artikelAuflisten(false)
+
+    let essigundco = new Gruppe("Essig & Co")
+    essigundco.artikelListe = [essigessenz,apfelessig,tafelessig,zitronensaft]
+    essigundco.artikelAuflisten(false)
+
+    let saucenunddips = new Gruppe("Saucen & Dips")
+    saucenunddips.artikelListe = [ketchup,mayo,remoulade,knoblauchsauce,bbcsauce,curryketchup]
+    saucenunddips.artikelAuflisten(false)
+
+    let andere = new Gruppe("Andere")
+    andere.artikelListe = []
+    andere.artikelAuflisten(false)
+
+    let aufstrich = new Gruppe("Aufstrich")
+    aufstrich.artikelListe = []
+    aufstrich.artikelAuflisten(false)
+
+    let fleisch = new Gruppe("Fleisch")
+    fleisch.artikelListe = []
+    fleisch.artikelAuflisten(false)
+
+    let alkohol = new Gruppe("Alkoholische Getränke")
+    alkohol.artikelListe = []
+    alkohol.artikelAuflisten(false)
+
+    let fetteundoele = new Gruppe("Fette und Öle")
+    fetteundoele.artikelListe = []
+    fetteundoele.artikelAuflisten(false)
+
+    let konserven = new Gruppe("Konserven")
+    konserven.artikelListe = []
+    konserven.artikelAuflisten(false)
+
+    let gewuerze = new Gruppe("Gewürze")
+    gewuerze.artikelListe = []
+    gewuerze.artikelAuflisten(false)
+
+    let kochundbackhelfer = new Gruppe("Koch und Backhelfer")
+    kochundbackhelfer.artikelListe = []
+    kochundbackhelfer.artikelAuflisten(false)
+
+
 }
 
 function teste_gruppeFinden() {
@@ -29,7 +189,7 @@ function teste_gruppeFinden() {
     einkaufen.gruppeHinzufuegen("Andere")
     einkaufen.gruppeHinzufuegen("Aufstrich")
     einkaufen.gruppeHinzufuegen("Fleisch")
-    einkaufen.gruppeHinzufuegen("Getränke")
+    einkaufen.gruppeHinzufuegen("Alkoholische Getränke")
     einkaufen.gruppeHinzufuegen("Fette und Öle")
     einkaufen.gruppeHinzufuegen("Konserven")
     einkaufen.gruppeHinzufuegen("Gewürze")
@@ -64,7 +224,7 @@ function teste_gruppeFinden() {
     let gruppe9 = einkaufen.gruppeFinden("Fleisch")
     console.debug("gruppe9:", gruppe9)
 
-    let gruppe10 = einkaufen.gruppeFinden("Getränke")
+    let gruppe10 = einkaufen.gruppeFinden("Alkoholische Getränke")
     console.debug("gruppe10:", gruppe10)
 
     let gruppe11 = einkaufen.gruppeFinden("Fette und Öle")
@@ -87,4 +247,6 @@ function main() {
     teste_gruppeFinden()
 
 }
+
 main()
+
