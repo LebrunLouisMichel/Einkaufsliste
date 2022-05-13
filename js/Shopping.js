@@ -13,23 +13,29 @@ class Shopping {
         this.setup = null
     }
 
-    gruppeFinden(suchName, meldungAusgeben) {
-        for (let gruppe of this.gruppenListe) {
+    gruppeFinden(gruppenName) {
+        let gruppenIndex = this.gruppenListe.indexOf(gruppenName)
+        if (gruppenIndex >= 0) {
+            return gruppenName
+        } else {
+            //console.debug("Gruppe\"" + gruppenName + "\" nicht gefunden")
+            return null
 
-            if (gruppe.name == suchName) {
-                return gruppe
-            }
         }
-
-        return null
     }
 
     gruppeHinzufuegen(name) {
-        let neueGruppe = new Gruppe(name)
-        this.gruppenListe.push(neueGruppe)
-        return neueGruppe
+        let gleicheGruppe = this.gruppeFinden(name)
+        if (gleicheGruppe == null) {
+            let neueGruppe = (name)
+            this.gruppenListe.push(neueGruppe)
+            this.aktiveGruppe = neueGruppe
+            console.debug("Gruppe " + neueGruppe + " hinzugefügt")
+        } else {
+            console.debug("Gruppe " + name + " existiert schon")
+            return null
+        }
     }
-
 
     gruppeUmbenennen(alterName, neuerName) {
         let vorhandeneGruppe = this.gruppeFinden(alterName)
