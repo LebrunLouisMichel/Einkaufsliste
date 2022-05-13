@@ -1,4 +1,5 @@
 import {Gruppe} from "./Gruppe.js"
+import Artikel from "../src/model/Artikel.js";
 
 
 class Shopping {
@@ -24,17 +25,11 @@ class Shopping {
     }
 
     gruppeHinzufuegen(name) {
-        let gleicheGruppe = this.gruppeFinden(name)
-        if (gleicheGruppe == -1) {
-            let neueGruppe = (name)
-            gruppenListe.push(neueGruppe)
-            this.aktiveGruppe = neueGruppe
-            console.debug("Gruppe " + neueGruppe + " hinzugefügt")
-        } else {
-            console.debug("Gruppe " + name + " existiert schon")
-            return null
-        }
+        let neueGruppe = new Gruppe(name)
+        this.gruppenListe.push(neueGruppe)
+        return neueGruppe
     }
+
 
     gruppeUmbenennen(alterName, neuerName) {
         let vorhandeneGruppe = this.gruppeFinden(alterName)
