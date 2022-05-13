@@ -1,6 +1,7 @@
 import {Gruppe} from "../../js/Gruppe.js"
 import {Artikel} from "../../js/Artikel.js"
 import {Shopping} from "../../js/Shopping.js"
+import artikel from "../../src/model/Artikel.js";
 
 
 function teste_artikelAuflisten() {
@@ -10,8 +11,6 @@ function teste_artikelAuflisten() {
     let saft = new Artikel("saft", 1)
     let wasser = new Artikel("wasser", 2)
     let cola = new Artikel("cola", 3)
-
-
     let mehl = new Artikel("Mehl", 4)
     let reis = new Artikel("Reis", 5)
     let banane = new Artikel("Banane", 6)
@@ -24,13 +23,13 @@ function teste_artikelAuflisten() {
     let tillsitter = new Artikel("Tillsitter", 13)
     let kaffee = new Artikel("Kaffee", 14)
     let margarine = new Artikel("Margarine", 15)
-    let oliveloel = new Artikel("Oliven Öl", 16)
+    let olivenloel = new Artikel("Oliven Öl", 16)
     let frittieroel = new Artikel("Frittier Öl 3L", 17)
-    let ol = new Artikel("Öl 1L", 18)
+    let oel = new Artikel("Öl 1L", 18)
     let kakao = new Artikel("Kakao", 19)
     let paprikatk = new Artikel("Paprika TK", 20)
-    let hacktk = new Artikel("Hackfleisch 500G", 21)
-    let bratwursttk = new Artikel("Bratwurst 5er TK", 22)
+    let hackfleisch = new Artikel("Hackfleisch 500G", 21)
+    let bratwurst = new Artikel("Bratwurst 5er TK", 22)
     let schweinefilet = new Artikel("Schweinefilet", 23)
     let kotelett = new Artikel("Koteletts TK", 24)
     let kartoffel = new Artikel("Kartoffeln in ca.kg", 25)
@@ -102,7 +101,7 @@ function teste_artikelAuflisten() {
     let saucenbinderdunkel = new Artikel("Saucenbinder Dunkel", 91)
     let saucenbinderhell = new Artikel("Saucenbinder Hell", 92)
     let saucenbindercreme = new Artikel("Saucenbinder Creme", 93)
-    let hoillandaise = new Artikel("Hollandaise", 94)
+    let hollandaise = new Artikel("Hollandaise", 94)
     let butter = new Artikel("Butter", 95)
     let zitronensaft = new Artikel("Zitronensaft", 96)
     let essigessenz = new Artikel("Essigessenz", 97)
@@ -110,10 +109,14 @@ function teste_artikelAuflisten() {
     let apfelessig = new Artikel("Apfelessig", 99)
     let vanillepudding = new Artikel("Vanillepudding", 100)
     let schokopudding = new Artikel("Schokopudding", 101)
+    let bier = new Artikel("Bier",102)
+    let rum = new Artikel("Rum",103)
+    let malibu = new Artikel("Malibu",104)
+    let ananassaft = new Artikel("Ananassaft",105)
 
 
     let alkoholfreieGetraenke = new Gruppe("Alkoholfreie Getränke", 1)
-    alkoholfreieGetraenke.artikelListe = [saft, wasser, cola, colasirup, orangensirup,zitrussirup,orangensaft,kaffee,kakao,kamillentee,pfefferminztee,fencheltee,amarettosirup,]
+    alkoholfreieGetraenke.artikelListe = [saft, wasser, cola, colasirup, orangensirup,zitrussirup,orangensaft,kaffee,kakao,kamillentee,pfefferminztee,fencheltee,amarettosirup,ananassaft]
     alkoholfreieGetraenke.artikelAuflisten(false)
 
     let obstundGemuese = new Gruppe("Obst und Gemüse", 2)
@@ -141,37 +144,36 @@ function teste_artikelAuflisten() {
     saucenunddips.artikelAuflisten(false)
 
     let andere = new Gruppe("Andere",8)
-    andere.artikelListe = []
+    andere.artikelListe = [kaffeefilter]
     andere.artikelAuflisten(false)
 
     let aufstrich = new Gruppe("Aufstrich",9)
-    aufstrich.artikelListe = []
+    aufstrich.artikelListe = [schokoaufstrich,marmelade]
     aufstrich.artikelAuflisten(false)
 
     let fleisch = new Gruppe("Fleisch",10)
-    fleisch.artikelListe = []
+    fleisch.artikelListe = [hackfleisch,bratwurst,schweinefilet,kotelett,]
     fleisch.artikelAuflisten(false)
 
     let alkohol = new Gruppe("Alkoholische Getränke",11)
-    alkohol.artikelListe = []
+    alkohol.artikelListe = [bier,rum,malibu]
     alkohol.artikelAuflisten(false)
 
     let fetteundoele = new Gruppe("Fette und Öle",12)
-    fetteundoele.artikelListe = []
+    fetteundoele.artikelListe = [margarine,frittieroel,olivenloel,oel]
     fetteundoele.artikelAuflisten(false)
 
     let konserven = new Gruppe("Konserven",13)
-    konserven.artikelListe = []
+    konserven.artikelListe = [passiertetomaten,tomatendose,tomatenmark,prinzessbohnen,chillibohnen,weissebohnen,mandarinen,apfelmuss,schwarzwurzel,spargel,gruenkohl,fruehstuecksfleisch,birnen,aprikosen,thunfisch,champignons,gurckenganz,pickels,gurckengeschnitten]
     konserven.artikelAuflisten(false)
 
     let gewuerze = new Gruppe("Gewürze",14)
-    gewuerze.artikelListe = []
+    gewuerze.artikelListe = [salz,meersalz,pfefferweis,pfefferfschwarz,pfefferbunt,paparikaedelsuess,paprikarosenscharf,muskatnuss,cumin,thymian,oregano,basilicum]
     gewuerze.artikelAuflisten(false,)
 
     let kochundbackhelfer = new Gruppe("Koch und Backhelfer",15)
-    kochundbackhelfer.artikelListe = []
+    kochundbackhelfer.artikelListe = [zucker,saucenbinderdunkel,saucenbinderhell,saucenbindercreme,vanillepudding,schokopudding]
     kochundbackhelfer.artikelAuflisten(false)
-
 
 }
 
@@ -198,7 +200,7 @@ function teste_gruppeFinden() {
 
     // ToDo: füge ab hier deinen Code ein
     let gruppe1 = einkaufen.gruppeFinden("Obst & Gemüse")
-    console.debug("gruppe1: ", gruppe1)
+    console.debug("gruppe1:",)
 
     let gruppe2 = einkaufen.gruppeFinden("Getreideprodukte")
     console.debug("gruppe2: ", gruppe2)
