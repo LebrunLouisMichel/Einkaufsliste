@@ -13,15 +13,15 @@ class Shopping {
         this.setup = null
     }
 
-    gruppeFinden(gruppenName) {
-        let gruppenIndex = this.gruppenListe.indexOf(gruppenName)
-        if (gruppenIndex >= 0) {
-            return gruppenName
-        } else {
-            console.debug("Gruppe\"" + gruppenName + "\" nicht gefunden")
-            return null
+    gruppeFinden(suchName, meldungAusgeben) {
+        for (let gruppe of this.gruppenListe) {
 
+            if (gruppe.name == suchName) {
+                return gruppe
+            }
         }
+
+        return null
     }
 
     gruppeHinzufuegen(name) {
