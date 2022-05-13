@@ -12,7 +12,7 @@ function teste_artikelAuflisten() {
     let cola = new Artikel("cola", 3)
     let alkoholfreieGetraenke = new Gruppe("Alkoholfreie Getränke", 1)
     alkoholfreieGetraenke.artikelListe = [saft, wasser, cola]
-    alkoholfreieGetraenke.artikelAuflisten()
+    alkoholfreieGetraenke.artikelAuflisten(false)
 }
 
 function teste_gruppeFinden() {
@@ -40,7 +40,7 @@ function teste_gruppeFinden() {
 function main() {
     console.debug("[Lektion 7] ============================")
     teste_artikelAuflisten()
-    //teste_gruppeFinden()
+    teste_gruppeFinden()
 
 }
 main()
