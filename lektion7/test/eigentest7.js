@@ -120,55 +120,55 @@ function teste_artikelAuflisten() {
     obstundGemuese.artikelListe = [banane,paprikatk,kartoffel,zwiebel,tomaten,moehren,erbsen]
     obstundGemuese.artikelAuflisten(false)
 
-    let getreideprodukte = new Gruppe("Getreideprodukte")
+    let getreideprodukte = new Gruppe("Getreideprodukte",3)
     getreideprodukte.artikelListe = [mehl,reis,spaghetti,spirelli,penne,tortelinispinat,tortelinischinken,]
     getreideprodukte.artikelAuflisten(false)
 
-    let milchprodukte = new Gruppe("Milchprodukte")
+    let milchprodukte = new Gruppe("Milchprodukte",4)
     milchprodukte.artikelListe = [milchprodukte,gouda,tillsitter,schlagsahne,kochsahne,kraeuterbutter]
     milchprodukte.artikelAuflisten(false)
 
-    let brot = new Gruppe("Brot")
+    let brot = new Gruppe("Brot",5)
     brot.artikelListe = [weltmeister,vollkorntoast,weizentoast]
     brot.artikelAuflisten(false)
 
-    let essigundco = new Gruppe("Essig & Co")
+    let essigundco = new Gruppe("Essig & Co",6)
     essigundco.artikelListe = [essigessenz,apfelessig,tafelessig,zitronensaft]
     essigundco.artikelAuflisten(false)
 
-    let saucenunddips = new Gruppe("Saucen & Dips")
+    let saucenunddips = new Gruppe("Saucen & Dips",7)
     saucenunddips.artikelListe = [ketchup,mayo,remoulade,knoblauchsauce,bbcsauce,curryketchup]
     saucenunddips.artikelAuflisten(false)
 
-    let andere = new Gruppe("Andere")
+    let andere = new Gruppe("Andere",8)
     andere.artikelListe = []
     andere.artikelAuflisten(false)
 
-    let aufstrich = new Gruppe("Aufstrich")
+    let aufstrich = new Gruppe("Aufstrich",9)
     aufstrich.artikelListe = []
     aufstrich.artikelAuflisten(false)
 
-    let fleisch = new Gruppe("Fleisch")
+    let fleisch = new Gruppe("Fleisch",10)
     fleisch.artikelListe = []
     fleisch.artikelAuflisten(false)
 
-    let alkohol = new Gruppe("Alkoholische Getränke")
+    let alkohol = new Gruppe("Alkoholische Getränke",11)
     alkohol.artikelListe = []
     alkohol.artikelAuflisten(false)
 
-    let fetteundoele = new Gruppe("Fette und Öle")
+    let fetteundoele = new Gruppe("Fette und Öle",12)
     fetteundoele.artikelListe = []
     fetteundoele.artikelAuflisten(false)
 
-    let konserven = new Gruppe("Konserven")
+    let konserven = new Gruppe("Konserven",13)
     konserven.artikelListe = []
     konserven.artikelAuflisten(false)
 
-    let gewuerze = new Gruppe("Gewürze")
+    let gewuerze = new Gruppe("Gewürze",14)
     gewuerze.artikelListe = []
-    gewuerze.artikelAuflisten(false)
+    gewuerze.artikelAuflisten(false,)
 
-    let kochundbackhelfer = new Gruppe("Koch und Backhelfer")
+    let kochundbackhelfer = new Gruppe("Koch und Backhelfer",15)
     kochundbackhelfer.artikelListe = []
     kochundbackhelfer.artikelAuflisten(false)
 
