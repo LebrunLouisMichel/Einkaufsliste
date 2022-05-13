@@ -90,3 +90,6 @@ function main() {
 }
 
 main()
+
+export default Gruppe
+
