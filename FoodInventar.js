@@ -139,9 +139,9 @@ let art99 = new Lebensmittel("Vanillepudding", 0, 2)
 let art100 = new Lebensmittel("Schokopudding", 0, 1)
 
 
-let milchProdukte = new Lebensmittelliste("Milch Produkte")
+let milchproduktListe = new Lebensmittelliste("Milchprodukte")
 let milchArray = [art8, art9, art10, art43, art44, art45]
-milchProdukte.artikelsHinzufuegen(milchArray)
+milchproduktListe.artikelsHinzufuegen(milchArray)
 
 let saeurenListe = new Lebensmittelliste("Essig & co")
 let saeurenArray = [art95, art96, art97, art98]
@@ -204,7 +204,7 @@ let kochundbackArray = [art90, art91, art92, art93, art99, art100]
 kochundbackListe.artikelsHinzufuegen(kochundbackArray)
 
 
-let gruppenArray = [milchProdukte, brotListe, getreideListe, getraenkeListe, fettListe, fruechteListe, saucenliste,
+let gruppenArray = [milchproduktListe, brotListe, getreideListe, getraenkeListe, fettListe, fruechteListe, saucenliste,
     fleischListe, aufstrichListe, condimentListe, konservenListe, gewuerzeListe, kochundbackListe, saeurenListe]
 
 
