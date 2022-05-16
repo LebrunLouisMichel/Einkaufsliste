@@ -1,5 +1,5 @@
 import {Gruppe} from "../../js/Gruppe.js"
-import {Artikel} from "../../js/Artikel.js"
+import {Artikel} from "../../js/eigenArtikel.js"
 import {Shopping} from "../../js/Shopping.js"
 import artikel from "../../src/model/Artikel.js";
 
@@ -8,12 +8,12 @@ function teste_artikelAuflisten() {
     console.debug("Aufgabe 1 ----------------------");
     console.debug("Artikel auflisten:");
 
-    let saft = new Artikel("saft", 1)
-    let wasser = new Artikel("wasser", 2)
-    let cola = new Artikel("cola", 3)
-    let mehl = new Artikel("Mehl", 4)
-    let reis = new Artikel("Reis", 5)
-    let banane = new Artikel("Banane", 6)
+    let saft = new Artikel("saft", 1,2)
+    let wasser = new Artikel("wasser", 2,18)
+    let cola = new Artikel("cola", 3,6)
+    let mehl = new Artikel("Mehl", 4,3)
+    let reis = new Artikel("Reis", 5,1)
+    let banane = new Artikel("Banane", 6,)
     let weltmeister = new Artikel("Weltmeister", 7)
     let weizentoast = new Artikel("Weizen Toast", 8)
     let vollkorntoast = new Artikel("Vollkorn Toast", 9)
@@ -166,7 +166,7 @@ function teste_artikelAuflisten() {
 
     let gewuerze = new Gruppe("Gewürze",13)
     gewuerze.artikelListe = [salz,meersalz,pfefferweis,pfefferfschwarz,pfefferbunt,paparikaedelsuess,paprikarosenscharf,muskatnuss,cumin,thymian,oregano,basilicum]
-    gewuerze.artikelAuflisten(false,)
+    gewuerze.artikelAuflisten(false)
 
     let kochundbackhelfer = new Gruppe("Koch und Backhelfer",14)
     kochundbackhelfer.artikelListe = [zucker,saucenbinderdunkel,saucenbinderhell,saucenbindercreme,vanillepudding,schokopudding]
