@@ -115,66 +115,66 @@ function teste_artikelAuflisten() {
     let ananassaft = new Artikel("Ananassaft",105)
 
 
-    let alkoholfreieGetraenke = new Gruppe("Alkoholfreie Getränke", 1)
-    alkoholfreieGetraenke.artikelListe = [saft, wasser, cola, colasirup, orangensirup,zitrussirup,orangensaft,kaffee,kakao,kamillentee,pfefferminztee,fencheltee,amarettosirup,ananassaft]
-    alkoholfreieGetraenke.artikelAuflisten(false)
 
-    let obstundGemuese = new Gruppe("Obst und Gemüse", 2)
+    let obstundGemuese = new Gruppe("Obst und Gemüse", 1)
     obstundGemuese.artikelListe = [banane,paprikatk,kartoffel,zwiebel,tomaten,moehren,erbsen]
     obstundGemuese.artikelAuflisten(false)
 
-    let getreideprodukte = new Gruppe("Getreideprodukte",3)
+    let getreideprodukte = new Gruppe("Getreideprodukte",2)
     getreideprodukte.artikelListe = [mehl,reis,spaghetti,spirelli,penne,tortelinispinat,tortelinischinken,]
     getreideprodukte.artikelAuflisten(false)
 
-    let milchprodukte = new Gruppe("Milchprodukte",4)
+    let milchprodukte = new Gruppe("Milchprodukte",3)
     milchprodukte.artikelListe = [milchprodukte,gouda,tillsitter,schlagsahne,kochsahne,kraeuterbutter]
     milchprodukte.artikelAuflisten(false)
 
-    let brot = new Gruppe("Brot",5)
+    let brot = new Gruppe("Brot",4)
     brot.artikelListe = [weltmeister,vollkorntoast,weizentoast]
     brot.artikelAuflisten(false)
 
-    let essigundco = new Gruppe("Essig & Co",6)
+    let essigundco = new Gruppe("Essig & Co",5)
     essigundco.artikelListe = [essigessenz,apfelessig,tafelessig,zitronensaft]
     essigundco.artikelAuflisten(false)
 
-    let saucenunddips = new Gruppe("Saucen & Dips",7)
+    let saucenunddips = new Gruppe("Saucen & Dips",6)
     saucenunddips.artikelListe = [ketchup,mayo,remoulade,knoblauchsauce,bbcsauce,curryketchup]
     saucenunddips.artikelAuflisten(false)
 
-    let andere = new Gruppe("Andere",8)
+    let andere = new Gruppe("Andere",7)
     andere.artikelListe = [kaffeefilter]
     andere.artikelAuflisten(false)
 
-    let aufstrich = new Gruppe("Aufstrich",9)
+    let aufstrich = new Gruppe("Aufstrich",8)
     aufstrich.artikelListe = [schokoaufstrich,marmelade]
     aufstrich.artikelAuflisten(false)
 
-    let fleisch = new Gruppe("Fleisch",10)
+    let fleisch = new Gruppe("Fleisch",9)
     fleisch.artikelListe = [hackfleisch,bratwurst,schweinefilet,kotelett,]
     fleisch.artikelAuflisten(false)
 
-    let alkohol = new Gruppe("Alkoholische Getränke",11)
+    let alkohol = new Gruppe("Alkoholische Getränke",10)
     alkohol.artikelListe = [bier,rum,malibu]
     alkohol.artikelAuflisten(false)
 
-    let fetteundoele = new Gruppe("Fette und Öle",12)
+    let fetteundoele = new Gruppe("Fette und Öle",11)
     fetteundoele.artikelListe = [margarine,frittieroel,olivenloel,oel]
     fetteundoele.artikelAuflisten(false)
 
-    let konserven = new Gruppe("Konserven",13)
+    let konserven = new Gruppe("Konserven",12)
     konserven.artikelListe = [passiertetomaten,tomatendose,tomatenmark,prinzessbohnen,chillibohnen,weissebohnen,mandarinen,apfelmuss,schwarzwurzel,spargel,gruenkohl,fruehstuecksfleisch,birnen,aprikosen,thunfisch,champignons,gurckenganz,pickels,gurckengeschnitten]
     konserven.artikelAuflisten(false)
 
-    let gewuerze = new Gruppe("Gewürze",14)
+    let gewuerze = new Gruppe("Gewürze",13)
     gewuerze.artikelListe = [salz,meersalz,pfefferweis,pfefferfschwarz,pfefferbunt,paparikaedelsuess,paprikarosenscharf,muskatnuss,cumin,thymian,oregano,basilicum]
     gewuerze.artikelAuflisten(false,)
 
-    let kochundbackhelfer = new Gruppe("Koch und Backhelfer",15)
+    let kochundbackhelfer = new Gruppe("Koch und Backhelfer",14)
     kochundbackhelfer.artikelListe = [zucker,saucenbinderdunkel,saucenbinderhell,saucenbindercreme,vanillepudding,schokopudding]
     kochundbackhelfer.artikelAuflisten(false)
 
+    let alkoholfreieGetraenke = new Gruppe("Alkoholfreie Getränke", 15)
+    alkoholfreieGetraenke.artikelListe = [saft, wasser, cola, colasirup, orangensirup,zitrussirup,orangensaft,kaffee,kakao,kamillentee,pfefferminztee,fencheltee,amarettosirup,ananassaft]
+    alkoholfreieGetraenke.artikelAuflisten(false)
 }
 
 function teste_gruppeFinden() {
@@ -196,50 +196,56 @@ function teste_gruppeFinden() {
     einkaufen.gruppeHinzufuegen("Konserven")
     einkaufen.gruppeHinzufuegen("Gewürze")
     einkaufen.gruppeHinzufuegen("Koch & Backhelfer")
+    einkaufen.gruppeHinzufuegen("Alkoholfreie Getränke")
 
 
     // ToDo: füge ab hier deinen Code ein
+
+
     let gruppe1 = einkaufen.gruppeFinden("Obst & Gemüse")
-    console.debug("gruppe1:",)
+    console.debug("gruppe 1:",gruppe1)
 
     let gruppe2 = einkaufen.gruppeFinden("Getreideprodukte")
-    console.debug("gruppe2: ", gruppe2)
+    console.debug("Gruppe 2: ", gruppe2)
 
     let gruppe3 = einkaufen.gruppeFinden("Milchprodukte")
-    console.debug("gruppe3: ", gruppe3)
+    console.debug("Gruppe 3: ", gruppe3)
 
     let gruppe4 = einkaufen.gruppeFinden("Brot")
-    console.debug("gruppe4:", gruppe4)
+    console.debug("Gruppe 4:", gruppe4)
 
     let gruppe5 = einkaufen.gruppeFinden("Essig & co")
-    console.debug("gruppe5:", gruppe5)
+    console.debug("Gruppe 5:", gruppe5)
 
     let gruppe6 = einkaufen.gruppeFinden("Saucen & Dips")
-    console.debug("gruppe6:", gruppe6)
+    console.debug("Gruppe 6:", gruppe6)
 
     let gruppe7 = einkaufen.gruppeFinden("Andere")
-    console.debug("gruppe7:", gruppe7)
+    console.debug("Gruppe 7:", gruppe7)
 
     let gruppe8 = einkaufen.gruppeFinden("Aufstrich")
-    console.debug("gruppe8:", gruppe8)
+    console.debug("Gruppe 8:", gruppe8)
 
     let gruppe9 = einkaufen.gruppeFinden("Fleisch")
-    console.debug("gruppe9:", gruppe9)
+    console.debug("Gruppe 9:", gruppe9)
 
     let gruppe10 = einkaufen.gruppeFinden("Alkoholische Getränke")
-    console.debug("gruppe10:", gruppe10)
+    console.debug("Gruppe 10:", gruppe10)
 
     let gruppe11 = einkaufen.gruppeFinden("Fette und Öle")
-    console.debug("gruppe11:", gruppe11)
+    console.debug("Gruppe 11:", gruppe11)
 
     let gruppe12 = einkaufen.gruppeFinden("Konserven")
-    console.debug("gruppe12:", gruppe12)
+    console.debug("Gruppe 12:", gruppe12)
 
     let gruppe13 = einkaufen.gruppeFinden("Gewürze")
-    console.debug("gruppe13:", gruppe13)
+    console.debug("Gruppe 13:", gruppe13)
 
     let gruppe14 = einkaufen.gruppeFinden("Koch & Backhelfer")
-    console.debug("gruppe14:", gruppe14)
+    console.debug("Gruppe 14:", gruppe14)
+
+    let gruppe15 = einkaufen.gruppeFinden("Alkoholfreie Getränke")
+    console.debug("Gruppe 15:", gruppe15)
 
 }
 
