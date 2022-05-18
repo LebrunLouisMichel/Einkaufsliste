@@ -19,7 +19,10 @@
 <script type="text/babel">
 
   //ToDo: Schreibe hier deine Funktion Hallo!
-  
+  function Hallo(props) {
+    return <h1>Hallo React! {props.name}</h1>;
+  }
+
   const element = <Hallo />;
   ReactDOM.render(
     element,
@@ -33,6 +36,11 @@
 <script type="text/babel">
 
   //ToDo: Schreibe hier deine Klasse Tag!
+  class Tag extends React.Component {
+    render() {
+      return <h1>Heute ist ein schöner Tag! {this.props.name}</h1>;
+    }
+  }
 
   const element2 = <Tag />;
   ReactDOM.render(
