@@ -10,18 +10,18 @@ class ShoppingList extends React.Component {
   }
 
   initialisieren() {
-    let fantasy = App.gruppeHinzufuegen("Fantasy")
-    let film1 = fantasy.artikelHinzufuegen("Der Dunkle Kristall")
-    film1.gekauft = true
-    fantasy.artikelHinzufuegen("Die Barbaren")
-    let scifi = App.gruppeHinzufuegen("Science Fiction")
-    let film2 = scifi.artikelHinzufuegen("Alita - Battle Angel")
-    film2.gekauft = true
-    scifi.artikelHinzufuegen("Mad Max - Fury Road")
-    let dokus = App.gruppeHinzufuegen("Dokumentationen")
-    let film3 = dokus.artikelHinzufuegen("Endgame - Blaupause für die Globale Versklavung")
-    film3.gekauft = true
-    dokus.artikelHinzufuegen("Die Kabale")
+    let obstundGemuese = App.gruppeHinzufuegen("Obst und Gemüse")
+    let artikel1 = obstundGemuese.artikelHinzufuegen("Bananen")
+    artikel1.gekauft = true
+    obstundGemuese.artikelHinzufuegen("Kartoffeln 4 Kg")
+    let brot = App.gruppeHinzufuegen("Brot")
+    let artikel2 = brot.artikelHinzufuegen("Weltmeister")
+    artikel2.gekauft = true
+    brot.artikelHinzufuegen("Weizen Toast")
+    let milchprodukte = App.gruppeHinzufuegen("Lacktose Bar")
+    let artikel3= milchprodukte.artikelHinzufuegen("Milch")
+    artikel3.gekauft = true
+    milchprodukte.artikelHinzufuegen("Gouda")
   }
 
   render() {
@@ -46,7 +46,7 @@ class ShoppingList extends React.Component {
       <div id="container">
         {/* ToDo: füge hier drunter Deinen HTML-Code ein */}
         <header>
-          <h1>Watchlist</h1>
+          <h1>Lebensmittel Inventar</h1>
           <label
             className="mdc-text-field mdc-text-field--filled mdc-text-field--with-trailing-icon mdc-text-field--no-label">
             <span className="mdc-text-field__ripple"></span>
@@ -61,7 +61,7 @@ class ShoppingList extends React.Component {
 
         <main>
           <section>
-            <h2>Noch zu kaufen
+            <h2>Das bräuchten wir
               <i className="material-icons">expand_less</i>
             </h2>
             <dl>
@@ -70,7 +70,7 @@ class ShoppingList extends React.Component {
           </section>
           <hr/>
           <section>
-            <h2>Schon gekauft
+            <h2>Das haben wir
               <i className="material-icons">expand_less</i>
             </h2>
             <dl>

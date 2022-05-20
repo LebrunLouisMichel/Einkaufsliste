@@ -1,21 +1,27 @@
 #root {
     width: 23rem;
-    background-image: url("../img/markt.jpg");
+    background-image: url("../img/Food2.jpeg");
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
 }
 #container {
-    opacity: 85%;
+    opacity: 80%;
+
 }
 :root {
-    --mdc-theme-primary: #33691E;
+    --mdc-theme-primary: #00008B;
     --mdc-theme-secondary: #827717;
 }
 dt {
-    background-color: #7CB342;
+    background-color: #00008B;
     color: var(--mdc-theme-on-primary);
 }
+h1 {
+    color: #ffffff;
+    -webkit-text-stroke: thin blue ;
+}
+
 h2, dd {
     background-color: var(--mdc-theme-on-primary);
 }
