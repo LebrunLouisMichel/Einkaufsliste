@@ -3,7 +3,7 @@
     background-image: url("../img/Food2.jpeg");
     background-repeat: no-repeat;
     background-position: center center;
-    background-attachment: fixed;
+    background-attachment: inherit;
 }
 #container {
     opacity: 80%;
@@ -19,7 +19,8 @@ dt {
 }
 h1 {
     color: #ffffff;
-    -webkit-text-stroke: thin blue ;
+    -webkit-text-stroke: thin red  ;
+    font-style: italic;
 }
 
 h2, dd {
