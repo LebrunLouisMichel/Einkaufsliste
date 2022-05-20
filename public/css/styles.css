@@ -18,9 +18,10 @@ dt {
     color: var(--mdc-theme-on-primary);
 }
 h1 {
-    color: #ffffff;
+    color: white;
     -webkit-text-stroke: thin red  ;
     font-style: italic;
+    text-shadow: 5px 5px 5px blue;
 }
 
 h2, dd {
