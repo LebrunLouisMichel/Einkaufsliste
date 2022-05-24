@@ -1,9 +1,9 @@
 import React from 'react'
 import GruppenTag from './components/GruppenTag'
-import App from './model/Shopping'
+import Modell from './model/Shopping'
 
 
-class ShoppingList extends React.Component {
+class App extends React.Component {
   constructor(props) {
     super(props)
     this.initialisieren()
@@ -17,18 +17,18 @@ class ShoppingList extends React.Component {
   }
 
   initialisieren() {
-    let obstundGemuese = App.gruppeHinzufuegen("Obst und Gemüse")
-    let artikel1 = obstundGemuese.artikelHinzufuegen("Bananen")
-    artikel1.gekauft = true
-    obstundGemuese.artikelHinzufuegen("Kartoffeln 4 Kg")
-    let brot = App.gruppeHinzufuegen("Brot")
-    let artikel2 = brot.artikelHinzufuegen("Weltmeister")
-    artikel2.gekauft = true
-    brot.artikelHinzufuegen("Weizen Toast")
-    let milchprodukte = App.gruppeHinzufuegen("Lacktose Bar")
-    let artikel3= milchprodukte.artikelHinzufuegen("Milch")
-    artikel3.gekauft = true
-    milchprodukte.artikelHinzufuegen("Gouda")
+    let fantasy = Modell.gruppeHinzufuegen("Fantasy")
+    let film1 = fantasy.artikelHinzufuegen("Der Dunkle Kristall")
+    film1.gekauft = true
+    fantasy.artikelHinzufuegen("Die Barbaren")
+    let scifi = Modell.gruppeHinzufuegen("Science Fiction")
+    let film2 = scifi.artikelHinzufuegen("Alita - Battle Angel")
+    film2.gekauft = true
+    scifi.artikelHinzufuegen("Mad Max - Fury Road")
+    let dokus = Modell.gruppeHinzufuegen("Dokumentationen")
+    let film3 = dokus.artikelHinzufuegen("Endgame - Blaupause für die Globale Versklavung")
+    film3.gekauft = true
+    dokus.artikelHinzufuegen("Die Kabale")
   }
 
   einkaufenAufZuKlappen() {
@@ -37,24 +37,37 @@ class ShoppingList extends React.Component {
   }
 
   erledigtAufZuKlappen() {
-  // ToDo: fertig programmieren
+    // ToDo: fertig programmieren
+  }
+
+  // ToDo: diese Methode als 'checkHandler' an GruppenTag und ArtikelTag durchreichen
+  artikelChecken = (artikel) => {
+    // artikel.gekauft 'umpolen'
+    // 'aktion' abhängig von 'artikel.gekauft' auf "erledigt" oder "reaktiviert" setzen
+    // App.informieren mit 'aktion'
+    // 'state' aktualisieren
+  }
+
+  setAktiveGruppe(gruppe) {
+    // ToDo:
   }
 
   render() {
     let nochZuKaufen = []
     if (this.state.einkaufenAufgeklappt == true) {
-      for (const gruppe of App.gruppenListe) {
+      for (const gruppe of Modell.gruppenListe) {
         nochZuKaufen.push(<GruppenTag
           key={gruppe.id}
           gruppe={gruppe}
-          gekauft={false}/>)
+          gekauft={false}
+          aktiveGruppeHandler={() => this.setAktiveGruppe(gruppe)}/>)
       }
     }
 
 
     let schonGekauft = []
     // ToDo: Bedingung  mit 'erledigtAufgeklappt' programmieren
-    for (const gruppe of App.gruppenListe) {
+    for (const gruppe of Modell.gruppenListe) {
       schonGekauft.push(<GruppenTag
         key={gruppe.id}
         gruppe={gruppe}
@@ -65,7 +78,7 @@ class ShoppingList extends React.Component {
       <div id="container">
         {/* ToDo: füge hier drunter Deinen HTML-Code ein */}
         <header>
-          <h1>Lebensmittel Inventar</h1>
+          <h1>Watchlist</h1>
           <label
             className="mdc-text-field mdc-text-field--filled mdc-text-field--with-trailing-icon mdc-text-field--no-label">
             <span className="mdc-text-field__ripple"></span>
@@ -80,8 +93,6 @@ class ShoppingList extends React.Component {
 
         <main>
           <section>
-            <h2>Das bräuchten wir
-              <i className="material-icons">expand_less</i>
             <h2>Noch zu kaufen
               <i onClick={() => this.einkaufenAufZuKlappen()} className="material-icons">
                 {this.state.einkaufenAufgeklappt ? 'expand_more' : 'expand_less'}
@@ -93,8 +104,6 @@ class ShoppingList extends React.Component {
           </section>
           <hr/>
           <section>
-            <h2>Das haben wir
-              <i className="material-icons">expand_less</i>
             <h2>Schon gekauft
               {/* ToDo: füge hier drunter Deinen Code ein */}
               <i className="material-icons">
@@ -127,4 +136,4 @@ class ShoppingList extends React.Component {
   }
 }
 
-export default ShoppingList
+export default App
