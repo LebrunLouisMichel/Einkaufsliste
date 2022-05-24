@@ -7,6 +7,13 @@ class ShoppingList extends React.Component {
   constructor(props) {
     super(props)
     this.initialisieren()
+    this.state = {
+      aktiveGruppe: null,
+      showGruppenDialog: false,
+      showSortierDialog: false,
+      einkaufenAufgeklappt: true,
+      erledigtAufgeklappt: false
+    }
   }
 
   initialisieren() {
@@ -24,17 +31,29 @@ class ShoppingList extends React.Component {
     milchprodukte.artikelHinzufuegen("Gouda")
   }
 
+  einkaufenAufZuKlappen() {
+    let neuerZustand = !this.state.einkaufenAufgeklappt
+    this.setState({einkaufenAufgeklappt: neuerZustand})
+  }
+
+  erledigtAufZuKlappen() {
+  // ToDo: fertig programmieren
+  }
+
   render() {
     let nochZuKaufen = []
-    for (const gruppe of App.gruppenListe) {
-      nochZuKaufen.push(<GruppenTag
-        key={gruppe.id}
-        gruppe={gruppe}
-        gekauft={false}/>)
+    if (this.state.einkaufenAufgeklappt == true) {
+      for (const gruppe of App.gruppenListe) {
+        nochZuKaufen.push(<GruppenTag
+          key={gruppe.id}
+          gruppe={gruppe}
+          gekauft={false}/>)
+      }
     }
 
 
     let schonGekauft = []
+    // ToDo: Bedingung  mit 'erledigtAufgeklappt' programmieren
     for (const gruppe of App.gruppenListe) {
       schonGekauft.push(<GruppenTag
         key={gruppe.id}
@@ -63,6 +82,10 @@ class ShoppingList extends React.Component {
           <section>
             <h2>Das bräuchten wir
               <i className="material-icons">expand_less</i>
+            <h2>Noch zu kaufen
+              <i onClick={() => this.einkaufenAufZuKlappen()} className="material-icons">
+                {this.state.einkaufenAufgeklappt ? 'expand_more' : 'expand_less'}
+              </i>
             </h2>
             <dl>
               {nochZuKaufen}
@@ -72,6 +95,11 @@ class ShoppingList extends React.Component {
           <section>
             <h2>Das haben wir
               <i className="material-icons">expand_less</i>
+            <h2>Schon gekauft
+              {/* ToDo: füge hier drunter Deinen Code ein */}
+              <i className="material-icons">
+                expand_less
+              </i>
             </h2>
             <dl>
               {schonGekauft}
