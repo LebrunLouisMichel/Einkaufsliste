@@ -1,9 +1,13 @@
 import React from 'react';
 
-class UnlikeButton extends React.Component{
+class UnlikeButton extends React.Component {
     constructor(props) {
         super(props);
         /* ToDo: Setze hier den initialen state von liked auf false */
+        this.state = {
+            UnlikeButton: false
+
+        }
 
     }
 
@@ -17,7 +21,7 @@ class UnlikeButton extends React.Component{
         }
         return (
             <div>
-                <button onClick={() => this.setState({ liked: true }) }>
+                <button onClick={() => this.setState({liked: true})}>
                     Gefällt mir nicht mehr
                 </button>
                 <p></p>
