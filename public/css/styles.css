@@ -85,7 +85,7 @@ dd {
     display: flex;
     margin-left: 0;
     margin: 3px;
-    border-radius: 20%;
+    border-radius: 20px;
 }
 
 dd label {
