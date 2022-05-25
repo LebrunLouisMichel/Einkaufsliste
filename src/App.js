@@ -50,7 +50,7 @@ class App extends React.Component {
         // 'state' aktualisieren
         artikel.gekauft = !artikel.gekauft
         let aktion
-        if (artikel.gekauft){
+        if (artikel.gekauft) {
             aktion = "erledigt"
         } else {
             aktion = "unerledigt"
@@ -62,7 +62,7 @@ class App extends React.Component {
     artikelHinzufuegen() {
         // ToDo: implementiere diese Methode
         let eingabe = document.getElementById("artikelEingabe")
-        if(eingabe.value.trim().length > 0){
+        if (eingabe.value.trim().length > 0) {
             Modell.aktiveGruppe.artikelHinzufuegen(eingabe.value)
             this.setState(this.state)
         }
