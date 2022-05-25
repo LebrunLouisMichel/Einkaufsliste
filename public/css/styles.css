@@ -5,21 +5,25 @@
     background-position: center center;
     background-attachment: inherit;
 }
+
 #container {
     opacity: 80%;
 
 }
+
 :root {
     --mdc-theme-primary: #00008B;
     --mdc-theme-secondary: #827717;
 }
+
 dt {
     background-color: #00008B;
     color: var(--mdc-theme-on-primary);
 }
+
 h1 {
     color: white;
-    -webkit-text-stroke: thin red  ;
+    -webkit-text-stroke: thin red;
     font-style: italic;
     text-shadow: 5px 5px 5px blue;
 }
@@ -28,54 +32,77 @@ h2, dd {
     background-color: var(--mdc-theme-on-primary);
 }
 
-.aktiv { background-color: #4b81d6 }
-.inaktiv { background-color: #7CB342 }
+.aktiv {
+    background-color: #4b81d6
+}
+
+.inaktiv {
+    background-color: #7CB342
+}
+
 h1, h2, dl {
     margin: 0;
 }
+
 h2 {
-    padding: 0 0 10px 0;
+    padding: 5px 5px 5px 10px;
+    margin-left: 10px ;
+    margin-right: 10px;
+    border-radius: 10px;
 }
+
 i.material-icons {
     cursor: pointer;
     float: right;
 }
+
 button.material-icons {
     font-size: inherit;
     vertical-align: bottom
 }
+
 [type="checkbox"] {
     vertical-align: top;
     margin-right: 8px;
 }
+
 dt {
     display: flex;
     font-weight: 500;
     padding: 3px 5px;
 }
+
 dt span {
     width: 100%;
 }
+
 dt, dd {
     height: 2rem;
     font-size: 1.2rem;
 }
+
 dd {
     display: flex;
     margin-left: 0;
     margin: 3px;
+    border-radius: 20%;
 }
+
 dd label {
     padding: 3px 0;
     overflow: hidden;
     text-overflow: ellipsis;
+
 }
+
 dd label input[type="checkbox"] {
     margin: 6px 6px;
 }
+
 dd input[type="search"] {
     margin-left: 1.5rem;
 }
+
 .mdc-text-field {
     height: 2rem;
 }
@@ -84,6 +111,7 @@ label {
     width: 91%;
     cursor: pointer
 }
+
 footer {
     display: flex;
     justify-content: space-between;
@@ -92,11 +120,13 @@ footer {
 .mdc-dialog {
     opacity: 100%;
 }
+
 .mdc-dialog__surface {
     position: absolute;
     top: 10%;
     left: 25px;
 }
+
 .material-icons {
     font-family: 'Material Icons';
     font-weight: normal;
@@ -111,5 +141,20 @@ footer {
     direction: ltr;
     -webkit-font-feature-settings: 'liga';
     -webkit-font-smoothing: antialiased;
+}
+
+.mdc-text-field {
+    margin-right: 5px;
+    margin-left: 10px;
+    border-radius: 20px;;
+}
+
+hr {
+    color: #8BDB79;
+    opacity: 0;
+}
+
+.material-icons.mdc-text-field__icon.mdc-text-field__icon--trailing {
+    width: 10%;
 }
 
