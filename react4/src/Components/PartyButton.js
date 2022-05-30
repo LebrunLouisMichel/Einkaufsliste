@@ -13,7 +13,7 @@ class PartyButton extends React.Component{
              *
              */
             <div>
-                 <button onClick={this.startParty}>START PARTY</button>
+                 <button onClick={this.startParty}>GET THIS PARTY STARTED</button>
             </div>
         )
     }

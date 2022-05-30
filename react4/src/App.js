@@ -11,7 +11,7 @@ class App extends React.Component {
         this.handleLock = this.handleLock.bind(this)
         this.state = {
             color: 'black',
-            headline: 'Halloween',
+            headline: '',
             partyIsLocked: false
         }
     }

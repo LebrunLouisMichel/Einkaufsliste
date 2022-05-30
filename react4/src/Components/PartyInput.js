@@ -33,7 +33,7 @@ class PartyInput extends React.Component {
             <div>
                 <input placeholder={this.props.headline} onChange={
                     (event) => this.onChange(event)}/>
-                <button onClick={this.onButtonClick}>Change Party Name</button>
+                <button onClick={this.onButtonClick}>NEXT LOCATION</button>
             </div>
         )
     }
