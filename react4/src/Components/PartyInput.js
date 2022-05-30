@@ -1,6 +1,6 @@
 import React from "react";
 
-class PartyInput extends React.Component{
+class PartyInput extends React.Component {
     constructor(props) {
         super(props)
         this.onChange = this.onChange.bind(this)
@@ -10,15 +10,17 @@ class PartyInput extends React.Component{
         }
     }
 
-    onButtonClick(){
+    onButtonClick() {
         console.log("Button wurde gedrückt")
         /* Aufgabe 4
          * ToDo: Führe die Funktion handleInput() aus, welche über die Props in diese Klasse übergeben wurde.
          *  Benutze als Argument das input-Attribut des States (wie in Zeile 8 gespeichert).
          */
+       this.props.handleInput(this.state.input)
+
     }
 
-    onChange(event){
+    onChange(event) {
         this.setState({input: event.target.value})
     }
 
@@ -35,8 +37,6 @@ class PartyInput extends React.Component{
             </div>
         )
     }
-
-
 
 
 }
