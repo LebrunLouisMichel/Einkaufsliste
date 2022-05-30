@@ -10,9 +10,10 @@ class App extends React.Component {
         this.handleColor = this.handleColor.bind(this)
         this.handleLock = this.handleLock.bind(this)
         this.state = {
-            color: 'black',
+            color: 'darkblue',
             headline: '',
             partyIsLocked: false
+
         }
     }
 
@@ -34,7 +35,7 @@ class App extends React.Component {
         return (
             <div style={{color: this.state.color}}>
                 <h1>React Übung 4: Event Handling</h1>
-                <h2>Nächste Party: {this.state.headline}</h2>
+                <h2>Next one: {this.state.headline}</h2>
                 <PartyButton color={this.handleColor}/>
                 <PartyInput headline={this.state.headline} handleInput={this.handleInput}/>
                 <PartyLock handleLock={this.handleLock} locked={this.state.partyIsLocked}/>
