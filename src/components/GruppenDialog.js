@@ -23,64 +23,63 @@ class GruppenDialog extends React.Component {
     }
 
 
-
-gruppeEntfernen(name)
-{
-    // ToDo: implementieren
-}
-
-render()
-{
-    const gruppenListe = []
-    for (let gruppe of this.state.gruppenListe) {
-        gruppenListe.push(
-            <GruppeBearbeitenTag
-                key={gruppe.id}
-                gruppe={gruppe}
-                entfernenHandler={() => this.gruppeEntfernen(gruppe.name)}/>
-        )
+    gruppeEntfernen(name) {
+        // ToDo: implementieren
+        Modell.gruppeEntfernen(name)
+        this.setState(this.state.gruppenListe)
     }
 
-    return (
-        <div className="mdc-dialog mdc-dialog--open">
-            <div className="mdc-dialog__container">
-                <div className="mdc-dialog__surface"
-                     role="alertdialog"
-                     aria-modal="true"
-                     aria-labelledby="my-dialog-title"
-                     aria-describedby="my-dialog-content">
-                    <h2 className="mdc-dialog__title" id="my-dialog-title">Gruppen bearbeiten</h2>
+    render() {
+        const gruppenListe = []
+        for (let gruppe of this.state.gruppenListe) {
+            gruppenListe.push(
+                <GruppeBearbeitenTag
+                    key={gruppe.id}
+                    gruppe={gruppe}
+                    entfernenHandler={() => this.gruppeEntfernen(gruppe.name)}/>
+            )
+        }
 
-                    <div className="mdc-dialog__content" id="my-dialog-content">
-                        <label
-                            className="mdc-text-field mdc-text-field--filled mdc-text-field--with-trailing-icon mdc-text-field--no-label">
-                            <span className="mdc-text-field__ripple"></span>
-                            <input className="mdc-text-field__input" type="search"
-                                   id="eingabe" placeholder="Gruppe hinzufügen"
-                                   onKeyPress={e => (e.key == 'Enter') ? this.gruppeHinzufuegen() : ''}/>
-                            <span className="mdc-line-ripple"></span>
-                            <i className="material-icons mdc-text-field__icon mdc-text-field__icon--trailing"
-                               tabIndex="0" role="button"
-                               onClick={() => this.gruppeHinzufuegen()}>add_circle</i>
-                        </label>
+        return (
+            <div className="mdc-dialog mdc-dialog--open">
+                <div className="mdc-dialog__container">
+                    <div className="mdc-dialog__surface"
+                         role="alertdialog"
+                         aria-modal="true"
+                         aria-labelledby="my-dialog-title"
+                         aria-describedby="my-dialog-content">
+                        <h2 className="mdc-dialog__title" id="my-dialog-title">Gruppen bearbeiten</h2>
 
-                        <dl className="mdc-deprecated-list">
-                            {gruppenListe}
-                        </dl>
-                    </div>
-                    <div className="mdc-dialog__actions">
-                        <button type="button" className="mdc-button mdc-dialog__button"
-                                onClick={this.props.onDialogClose}>
-                            <div className="mdc-button__ripple"></div>
-                            <span className="mdc-button__label">Schließen</span>
-                        </button>
+                        <div className="mdc-dialog__content" id="my-dialog-content">
+                            <label
+                                className="mdc-text-field mdc-text-field--filled mdc-text-field--with-trailing-icon mdc-text-field--no-label">
+                                <span className="mdc-text-field__ripple"></span>
+                                <input className="mdc-text-field__input" type="search"
+                                       id="eingabe" placeholder="Gruppe hinzufügen"
+                                       onKeyPress={e => (e.key == 'Enter') ? this.gruppeHinzufuegen() : ''}/>
+                                <span className="mdc-line-ripple"></span>
+                                <i className="material-icons mdc-text-field__icon mdc-text-field__icon--trailing"
+                                   tabIndex="0" role="button"
+                                   onClick={() => this.gruppeHinzufuegen()}>add_circle</i>
+                            </label>
+
+                            <dl className="mdc-deprecated-list">
+                                {gruppenListe}
+                            </dl>
+                        </div>
+                        <div className="mdc-dialog__actions">
+                            <button type="button" className="mdc-button mdc-dialog__button"
+                                    onClick={this.props.onDialogClose}>
+                                <div className="mdc-button__ripple"></div>
+                                <span className="mdc-button__label">Schließen</span>
+                            </button>
+                        </div>
                     </div>
                 </div>
+                <div className="mdc-dialog__scrim"></div>
             </div>
-            <div className="mdc-dialog__scrim"></div>
-        </div>
-    )
-}
+        )
+    }
 }
 
 export default GruppenDialog
