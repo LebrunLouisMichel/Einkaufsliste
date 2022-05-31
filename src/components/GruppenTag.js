@@ -8,7 +8,8 @@ class GruppenTag extends React.Component {
 
   artikelEntfernen(name) {
     this.props.gruppe.artikelEntfernen(name)
-    // this.props.aktiveGruppeHandler(this.props.gruppe)
+    this.props.aktiveGruppeHandler(this.props.gruppe)
+    Modell.informieren("[Gruppe] Artikel " + name + " wurde gelöscht")
     this.forceUpdate()
   }
 
