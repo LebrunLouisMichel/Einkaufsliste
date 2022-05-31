@@ -4,21 +4,21 @@ class GruppeBearbeitenTag extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            isEditing: false,
+            isEditing: true,
             newName: this.props.gruppe.name
         }
     }
 
     handleChange(event) {
         // ToDo: implementieren
-        let gruppenName
         this.setState({gruppenName: event.target.value})
+
     }
 
     /**
-     *
-     * @param {Gruppe} gruppe
-     * @param {Event.KEYPRESS} event
+     * Benennt eine Gruppe um
+     * @param {Gruppe} gruppe - die umzubenennende Gruppe
+     * @param {Event.KEYPRESS} event -
      */
 
     gruppeUmbenennen(gruppe, event) {

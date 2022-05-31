@@ -12,7 +12,7 @@ class ArtikelTag extends React.Component {
   }
 
   /**
-   * Reagiert auf Änderungen im Eingabefeld und speichert den neuen Wert im newName-state
+#ﬁ   * Reagiert auf Änderungen im Eingabefeld und speichert den neuen Wert im newName-state
    * @param {Event.CHANGE} event - das Change-Event im Eingabefeld
    */
   handleChange(event) {
